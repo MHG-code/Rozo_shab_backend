@@ -25,7 +25,8 @@ router.post("/login", (req, res, next) => {
     (data) => {
       res.send(data);
     },
-    (err) => next(err)
+    // (err) => next(err)
+    (err) => res.send(err)
   );
 });
 
